@@ -32,10 +32,15 @@
                 <span class="logo-dna">DNA</span><span class="logo-sound">Sound</span>
             </a>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#engagement">Engagement</a>
-                <a href="#contact" class="btn btn-outline">Contact</a>
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#expertise" data-i18n="nav_expertise">Expertise</a>
+                <a href="#engagement" data-i18n="nav_engagement">Engagement</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="nav_contact">Contact</a>
+                <div class="lang-toggle">
+                    <a href="#" class="lang-option active" data-lang="en">EN</a>
+                    <span class="lang-separator">|</span>
+                    <a href="#" class="lang-option" data-lang="bg">BG</a>
+                </div>
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle Menu">
                 <span class="bar"></span>
@@ -48,17 +53,18 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
-            <h2 class="hero-subtitle fade-in-up">Strategic AI Advisory & Intelligent Systems Architecture</h2>
+            <h2 class="hero-subtitle fade-in-up" data-i18n="hero_subtitle">Strategic AI Advisory & Intelligent Systems
+                Architecture</h2>
             <h1 class="hero-title fade-in-up delay-1">
-                The Future is Arriving<br>
-                <span class="gradient-text">Launching Soon</span>
+                <span data-i18n="hero_title_1">The Future is Arriving</span><br>
+                <span class="gradient-text" data-i18n="hero_title_2">Launching Soon</span>
             </h1>
-            <p class="hero-description fade-in-up delay-2">
+            <p class="hero-description fade-in-up delay-2" data-i18n="hero_desc">
                 Unified Sensory Intelligence — designing AI architectures that integrate perception, reasoning, signal
                 processing, and decision-making into cohesive, production-ready systems.
             </p>
             <div class="hero-cta fade-in-up delay-3">
-                <a href="#contact" class="btn btn-primary">Get Notified</a>
+                <a href="#contact" class="btn btn-primary" data-i18n="hero_btn">Get Notified</a>
             </div>
         </div>
     </section>
@@ -68,27 +74,32 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-text scroll-reveal">
-                    <h2 class="section-title">Alexander Iliev, Ph.D.</h2>
-                    <p class="lead-text">With over two decades of international experience across the United States and
+                    <h2 class="section-title" data-i18n="about_title">Alexander Iliev, Ph.D.</h2>
+                    <p class="lead-text" data-i18n="about_p1">With over two decades of international experience across
+                        the United States and
                         Europe, I advise enterprises, research institutions, and innovation-driven organizations on the
                         design and deployment of advanced Artificial Intelligence systems.</p>
-                    <p>My work integrates deep scientific research, patented psychoacoustic technologies with
+                    <p data-i18n="about_p2">My work integrates deep scientific research, patented psychoacoustic
+                        technologies with
                         commercially licensed solutions, and large-scale AI architectures deployed across academic,
                         industrial, and EU-funded initiatives.</p>
                     <div class="intersection-tags">
-                        <span class="tag">Artificial Intelligence</span>
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Intelligent Agents</span>
-                        <span class="tag">Big Data Systems</span>
-                        <span class="tag">Psychoacoustics</span>
+                        <span class="tag" data-i18n="tag_ai">Artificial Intelligence</span>
+                        <span class="tag" data-i18n="tag_ml">Machine Learning</span>
+                        <span class="tag" data-i18n="tag_agents">Intelligent Agents</span>
+                        <span class="tag" data-i18n="tag_bigdata">Big Data Systems</span>
+                        <span class="tag" data-i18n="tag_psych">Psychoacoustics</span>
                     </div>
-                    <p class="highlight-quote">"The focus is not experimentation — it is deployable intelligence."</p>
+                    <p class="highlight-quote" data-i18n="about_quote">"The focus is not experimentation — it is
+                        deployable intelligence."</p>
                 </div>
                 <div class="mission-card scroll-reveal delay-1 glass-card">
                     <div class="card-icon">🧠</div>
-                    <h3>DNASound Mission</h3>
-                    <p>DNASound is my applied AI venture dedicated to building next-generation intelligent systems.</p>
-                    <p>The mission of DNASound is <strong>Unified Sensory Intelligence</strong> — designing AI
+                    <h3 data-i18n="mission_title">DNASound Mission</h3>
+                    <p data-i18n="mission_p1">DNASound is my applied AI venture dedicated to building next-generation
+                        intelligent systems.</p>
+                    <p data-i18n="mission_p2">The mission of DNASound is <strong>Unified Sensory Intelligence</strong> —
+                        designing AI
                         architectures that integrate perception, reasoning, signal processing, and decision-making into
                         cohesive, production-ready systems.</p>
                 </div>
@@ -100,24 +111,26 @@
     <section id="expertise" class="section expertise-section bg-dark">
         <div class="container">
             <div class="section-header text-center scroll-reveal">
-                <h2 class="section-title text-light">Core Consulting Expertise</h2>
-                <p class="section-subtitle text-light-muted">Specialized expertise for enterprise-grade intelligence</p>
+                <h2 class="section-title text-light" data-i18n="expertise_title">Core Consulting Expertise</h2>
+                <p class="section-subtitle text-light-muted" data-i18n="expertise_subtitle">Specialized expertise for
+                    enterprise-grade intelligence</p>
             </div>
 
             <div class="expertise-grid">
                 <!-- Expertise 1 -->
                 <div class="expertise-card scroll-reveal glass-card-dark">
                     <div class="expertise-number">01</div>
-                    <h3>AI Agent Architecture & Autonomous Systems</h3>
-                    <p>Design and deployment of enterprise-grade AI agents and decision systems, including:</p>
+                    <h3 data-i18n="exp1_title">AI Agent Architecture & Autonomous Systems</h3>
+                    <p data-i18n="exp1_desc">Design and deployment of enterprise-grade AI agents and decision systems,
+                        including:</p>
                     <ul class="expertise-list">
-                        <li>Retrieval-Augmented Generation (RAG) systems</li>
-                        <li>Domain-specific LLM integration</li>
-                        <li>Secure enterprise knowledge agents</li>
-                        <li>Autonomous workflow orchestration</li>
-                        <li>Multi-agent system design</li>
+                        <li data-i18n="exp1_li1">Retrieval-Augmented Generation (RAG) systems</li>
+                        <li data-i18n="exp1_li2">Domain-specific LLM integration</li>
+                        <li data-i18n="exp1_li3">Secure enterprise knowledge agents</li>
+                        <li data-i18n="exp1_li4">Autonomous workflow orchestration</li>
+                        <li data-i18n="exp1_li5">Multi-agent system design</li>
                     </ul>
-                    <div class="expertise-focus">
+                    <div class="expertise-focus" data-i18n="exp1_focus">
                         <strong>Focus:</strong> scalable, secure, business-aligned architectures.
                     </div>
                 </div>
@@ -125,16 +138,16 @@
                 <!-- Expertise 2 -->
                 <div class="expertise-card scroll-reveal delay-1 glass-card-dark">
                     <div class="expertise-number">02</div>
-                    <h3>Machine Learning & Advanced Modeling</h3>
-                    <p>Strategic and technical guidance in:</p>
+                    <h3 data-i18n="exp2_title">Machine Learning & Advanced Modeling</h3>
+                    <p data-i18n="exp2_desc">Strategic and technical guidance in:</p>
                     <ul class="expertise-list">
-                        <li>Predictive modeling & forecasting systems</li>
-                        <li>Deep learning architectures (CNNs, transformers, hybrid models)</li>
-                        <li>Explainable AI (XAI) frameworks</li>
-                        <li>Bias detection & mitigation</li>
-                        <li>Production ML pipelines</li>
+                        <li data-i18n="exp2_li1">Predictive modeling & forecasting systems</li>
+                        <li data-i18n="exp2_li2">Deep learning architectures (CNNs, transformers, hybrid models)</li>
+                        <li data-i18n="exp2_li3">Explainable AI (XAI) frameworks</li>
+                        <li data-i18n="exp2_li4">Bias detection & mitigation</li>
+                        <li data-i18n="exp2_li5">Production ML pipelines</li>
                     </ul>
-                    <div class="expertise-focus">
+                    <div class="expertise-focus" data-i18n="exp2_focus">
                         <strong>Focus:</strong> measurable performance and long-term maintainability.
                     </div>
                 </div>
@@ -142,16 +155,16 @@
                 <!-- Expertise 3 -->
                 <div class="expertise-card scroll-reveal delay-2 glass-card-dark">
                     <div class="expertise-number">03</div>
-                    <h3>Data Strategy & Intelligent Infrastructure</h3>
-                    <p>End-to-end data architecture consulting:</p>
+                    <h3 data-i18n="exp3_title">Data Strategy & Intelligent Infrastructure</h3>
+                    <p data-i18n="exp3_desc">End-to-end data architecture consulting:</p>
                     <ul class="expertise-list">
-                        <li>Big Data processing systems</li>
-                        <li>Scalable AI infrastructure design</li>
-                        <li>Feature engineering & signal modeling</li>
-                        <li>Personalization engines & Behavioral analytics</li>
-                        <li>Decision-support platforms</li>
+                        <li data-i18n="exp3_li1">Big Data processing systems</li>
+                        <li data-i18n="exp3_li2">Scalable AI infrastructure design</li>
+                        <li data-i18n="exp3_li3">Feature engineering & signal modeling</li>
+                        <li data-i18n="exp3_li4">Personalization engines & Behavioral analytics</li>
+                        <li data-i18n="exp3_li5">Decision-support platforms</li>
                     </ul>
-                    <div class="expertise-focus">
+                    <div class="expertise-focus" data-i18n="exp3_focus">
                         <strong>Focus:</strong> turning complex data ecosystems into strategic assets.
                     </div>
                 </div>
@@ -159,16 +172,16 @@
                 <!-- Expertise 4 -->
                 <div class="expertise-card scroll-reveal delay-3 glass-card-dark">
                     <div class="expertise-number">04</div>
-                    <h3>Acoustics, Psychoacoustics & AI-Driven Signal Systems</h3>
-                    <p>Based on patented research and peer-reviewed scientific contributions:</p>
+                    <h3 data-i18n="exp4_title">Acoustics, Psychoacoustics & AI-Driven Signal Systems</h3>
+                    <p data-i18n="exp4_desc">Based on patented research and peer-reviewed scientific contributions:</p>
                     <ul class="expertise-list">
-                        <li>Speech analysis & emotion recognition systems</li>
-                        <li>Audio watermarking & data hiding</li>
-                        <li>Psychoacoustic modeling</li>
-                        <li>Perceptual AI systems</li>
-                        <li>Sensory intelligence design</li>
+                        <li data-i18n="exp4_li1">Speech analysis & emotion recognition systems</li>
+                        <li data-i18n="exp4_li2">Audio watermarking & data hiding</li>
+                        <li data-i18n="exp4_li3">Psychoacoustic modeling</li>
+                        <li data-i18n="exp4_li4">Perceptual AI systems</li>
+                        <li data-i18n="exp4_li5">Sensory intelligence design</li>
                     </ul>
-                    <div class="expertise-focus">
+                    <div class="expertise-focus" data-i18n="exp4_focus">
                         <strong>Focus:</strong> scientifically grounded signal intelligence with commercial viability.
                     </div>
                 </div>
@@ -181,49 +194,50 @@
         <div class="container">
             <div class="engagement-grid">
                 <div class="engagement-content scroll-reveal">
-                    <h2 class="section-title">Engagement Models</h2>
-                    <p class="lead-text">Engagements are tailored for organizations seeking long-term AI capability —
+                    <h2 class="section-title" data-i18n="engagement_title">Engagement Models</h2>
+                    <p class="lead-text" data-i18n="engagement_lead">Engagements are tailored for organizations seeking
+                        long-term AI capability —
                         not one-off experimentation.</p>
                     <div class="engagement-list">
                         <button class="engagement-item modal-trigger" data-modal="modal-advisory">
                             <i class="icon">📈</i>
-                            <span>Executive-level AI strategy advisory</span>
+                            <span data-i18n="eng_btn1">Executive-level AI strategy advisory</span>
                         </button>
                         <button class="engagement-item modal-trigger" data-modal="modal-architecture">
                             <i class="icon">🏗️</i>
-                            <span>System architecture design</span>
+                            <span data-i18n="eng_btn2">System architecture design</span>
                         </button>
                         <button class="engagement-item modal-trigger" data-modal="modal-roadmap">
                             <i class="icon">🗺️</i>
-                            <span>Enterprise AI roadmap development</span>
+                            <span data-i18n="eng_btn3">Enterprise AI roadmap development</span>
                         </button>
                         <button class="engagement-item modal-trigger" data-modal="modal-diligence">
                             <i class="icon">🔍</i>
-                            <span>Technical due diligence</span>
+                            <span data-i18n="eng_btn4">Technical due diligence</span>
                         </button>
                         <button class="engagement-item modal-trigger" data-modal="modal-prototype">
                             <i class="icon">🧪</i>
-                            <span>Prototype design & validation</span>
+                            <span data-i18n="eng_btn5">Prototype design & validation</span>
                         </button>
                         <button class="engagement-item modal-trigger" data-modal="modal-innovation">
                             <i class="icon">💡</i>
-                            <span>Innovation & patent strategy consulting</span>
+                            <span data-i18n="eng_btn6">Innovation & patent strategy consulting</span>
                         </button>
                     </div>
                 </div>
                 <div class="philosophy-card scroll-reveal delay-1 glass-card">
-                    <h3 class="gradient-text">Consulting Philosophy</h3>
-                    <p>Our approach combines:</p>
+                    <h3 class="gradient-text" data-i18n="phil_title">Consulting Philosophy</h3>
+                    <p data-i18n="phil_desc">Our approach combines:</p>
                     <ul class="philosophy-list">
-                        <li>Scientific rigor</li>
-                        <li>Engineering discipline</li>
-                        <li>Ethical AI standards</li>
-                        <li>Scalable system thinking</li>
-                        <li>Cross-domain integration</li>
+                        <li data-i18n="phil_li1">Scientific rigor</li>
+                        <li data-i18n="phil_li2">Engineering discipline</li>
+                        <li data-i18n="phil_li3">Ethical AI standards</li>
+                        <li data-i18n="phil_li4">Scalable system thinking</li>
+                        <li data-i18n="phil_li5">Cross-domain integration</li>
                     </ul>
                     <div class="core-principle">
-                        <h4>Every engagement is built around one principle:</h4>
-                        <p class="quote">"Intelligence must be engineered — not improvised."</p>
+                        <h4 data-i18n="phil_core_title">Every engagement is built around one principle:</h4>
+                        <p class="quote" data-i18n="phil_quote">"Intelligence must be engineered — not improvised."</p>
                     </div>
                 </div>
             </div>
@@ -238,15 +252,17 @@
                     <a href="#" class="logo text-light">
                         <span class="logo-dna">DNA</span><span class="logo-sound" style="color:#fff;">Sound</span>
                     </a>
-                    <p class="footer-tagline">AI Agents | Unified Sensory Intelligence</p>
+                    <p class="footer-tagline" data-i18n="footer_tagline">AI Agents | Unified Sensory Intelligence</p>
                 </div>
                 <div class="footer-contact">
-                    <h3>Contact for Strategic Advisory</h3>
-                    <p>For strategic advisory, enterprise collaboration, or system architecture consulting inquiries,
+                    <h3 data-i18n="contact_title">Contact for Strategic Advisory</h3>
+                    <p data-i18n="contact_desc">For strategic advisory, enterprise collaboration, or system architecture
+                        consulting inquiries,
                         please reach out directly.</p>
                     <div class="contact-layout">
                         <div class="contact-primary">
-                            <a href="mailto:contact@dnasound.com" class="btn btn-primary mt-4">Email Inquiry</a>
+                            <a href="mailto:contact@dnasound.com" class="btn btn-primary mt-4"
+                                data-i18n="email_btn">Email Inquiry</a>
                         </div>
                         <div class="contact-links">
                             <a href="https://www.linkedin.com/in/ailiev/" target="_blank"
@@ -265,8 +281,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 DNASound. All rights reserved.</p>
-                <p>Designed and architecture by Alexander Iliev, Ph.D.</p>
+                <p data-i18n="footer_rights">&copy; 2026 DNASound. All rights reserved.</p>
+                <p data-i18n="footer_design">Designed and architecture by Alexander Iliev, Ph.D.</p>
             </div>
         </div>
     </footer>
@@ -274,22 +290,23 @@
     <!-- Modals for Engagement Models -->
     <!-- Modal 1 -->
     <div id="modal-advisory" class="modal">
-        <div class="modal-content glass-card-dark">
-            <span class="close-modal">&times;</span>
-            <div class="modal-header">
-                <i class="icon gradient-text">📈</i>
-                <h3>Executive-Level AI Strategy Advisory</h3>
-            </div>
-            <div class="modal-body text-light-muted">
-                <p>Navigating the AI landscape requires more than just technical understanding; it demands strategic
+        <div class="modal-content glass-card">
+            <button class="close-modal">&times;</button>
+            <h3 class="modal-title" data-i18n="modal1_title">Executive-Level AI Strategy Advisory</h3>
+            <div class="modal-body">
+                <p data-i18n="modal1_p1">Navigating the AI landscape requires more than just technical understanding; it
+                    demands strategic
                     vision aligned with business objectives. Our executive advisory services bridge the gap between
                     complex AI capabilities and enterprise value, providing leadership teams with the clarity needed to
                     make high-stakes technological investments.</p>
-                <p>We work closely with C-suite executives and board members to demystify AI hype, identifying genuine
+                <p data-i18n="modal1_p2">We work closely with C-suite executives and board members to demystify AI hype,
+                    identifying genuine
                     opportunities for transformation within your specific industry vertical. This involves assessing
                     current technical maturity, evaluating competitive positioning, and outlining a realistic,
-                    high-impact intelligent systems roadmap.</p>
-                <p>Our advisory is grounded in decades of cross-domain experience, ensuring that your AI strategy is not
+                    high-impact
+                    intelligent systems roadmap.</p>
+                <p data-i18n="modal1_p3">Our advisory is grounded in decades of cross-domain experience, ensuring that
+                    your AI strategy is not
                     merely a theoretical exercise, but a practical, actionable blueprint designed to deliver measurable
                     ROI, optimize operational efficiency, and establish long-term technological leadership.</p>
             </div>
@@ -298,117 +315,121 @@
 
     <!-- Modal 2 -->
     <div id="modal-architecture" class="modal">
-        <div class="modal-content glass-card-dark">
-            <span class="close-modal">&times;</span>
-            <div class="modal-header">
-                <i class="icon gradient-text">🏗️</i>
-                <h3>System Architecture Design</h3>
-            </div>
-            <div class="modal-body text-light-muted">
-                <p>A robust, scalable architecture is the foundation of any successful enterprise AI deployment. We
+        <div class="modal-content glass-card">
+            <button class="close-modal">&times;</button>
+            <h3 class="modal-title" data-i18n="modal2_title">System Architecture Design</h3>
+            <div class="modal-body">
+                <p data-i18n="modal2_p1">A robust, scalable architecture is the foundation of any successful enterprise
+                    AI deployment. We
                     specialize in designing comprehensive system architectures that seamlessly integrate advanced
-                    machine learning models, autonomous agents, and large-scale data infrastructure into your existing
+                    machine
+                    learning models, autonomous agents, and large-scale data infrastructure into your existing
                     technological ecosystem.</p>
-                <p>Our architectural approach emphasizes modularity, security, and performance. We design systems that
-                    can evolve alongside rapidly advancing AI capabilities, ensuring that your infrastructure remains
-                    agile and resilient. From designing high-throughput data pipelines to defining the orchestration
-                    layer for multi-agent systems, we architect solutions built for production maturity.</p>
-                <p>By prioritizing 'deployable intelligence,' we ensure that the architecture not only supports current
-                    use cases but is also engineered to handle future scaling demands, regulatory compliance
-                    requirements, and the integration of novel sensory data streams.</p>
+                <p data-i18n="modal2_p2">Our architectural approach emphasizes modularity, security, and performance. We
+                    design systems that can
+                    evolve alongside rapidly advancing AI capabilities, ensuring that your infrastructure remains agile
+                    and resilient. From designing high-throughput data pipelines to defining the orchestration layer for
+                    multi-agent systems, we architect solutions built for production maturity.</p>
+                <p data-i18n="modal2_p3">By prioritizing "deployable intelligence," we ensure that the architecture not
+                    only supports current use
+                    cases but is also engineered to handle future scaling demands, regulatory compliance requirements,
+                    and
+                    the integration of novel sensory data streams.</p>
             </div>
         </div>
     </div>
 
     <!-- Modal 3 -->
     <div id="modal-roadmap" class="modal">
-        <div class="modal-content glass-card-dark">
-            <span class="close-modal">&times;</span>
-            <div class="modal-header">
-                <i class="icon gradient-text">🗺️</i>
-                <h3>Enterprise AI Roadmap Development</h3>
-            </div>
-            <div class="modal-body text-light-muted">
-                <p>Transforming an organization into an AI-driven enterprise is a multi-phase journey. Our roadmap
+        <div class="modal-content glass-card">
+            <button class="close-modal">&times;</button>
+            <h3 class="modal-title" data-i18n="modal3_title">Enterprise AI Roadmap Development</h3>
+            <div class="modal-body">
+                <p data-i18n="modal3_p1">Transforming an organization into an AI-driven enterprise is a multi-phase
+                    journey. Our roadmap
                     development service provides a structured, phased approach to AI adoption, moving organizations from
                     foundational data readiness to the deployment of advanced autonomous systems.</p>
-                <p>We collaboratively define clear milestones, required capabilities, and resource allocations for each
-                    phase of the journey. This includes identifying quick-win projects to build momentum, establishing
-                    necessary governance frameworks, and planning for the long-term integration of complex AI workflows
-                    across different business units.</p>
-                <p>The resulting roadmap serves as a strategic compass, aligning technical initiatives with broader
+                <p data-i18n="modal3_p2">We collaboratively define clear milestones, required capabilities, and resource
+                    allocations for each phase
+                    of the journey. This includes identifying quick-win projects to build momentum, establishing
+                    necessary
+                    governance frameworks, and planning for the long-term integration of complex AI workflows across
+                    different business units.</p>
+                <p data-i18n="modal3_p3">The resulting roadmap serves as a strategic compass, aligning technical
+                    initiatives with broader
                     business goals, mitigating deployment risks, and ensuring a sustainable, managed transformation that
                     builds true enterprise intelligence capabilities over time.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 4 -->
+    <!-- Modal 4: Technical Due Diligence -->
     <div id="modal-diligence" class="modal">
-        <div class="modal-content glass-card-dark">
-            <span class="close-modal">&times;</span>
-            <div class="modal-header">
-                <i class="icon gradient-text">🔍</i>
-                <h3>Technical Due Diligence</h3>
-            </div>
-            <div class="modal-body text-light-muted">
-                <p>For investors, acquiring companies, or organizations evaluating major AI vendor partnerships,
-                    assessing the true capabilities of an AI technology is critical. Our technical due diligence
-                    provides rigorous, objective evaluation of AI systems, underlying algorithms, and data
-                    architectures.</p>
-                <p>We look beyond the marketing claims to assess the technical viability, scalability, and defendability
+        <div class="modal-content glass-card">
+            <button class="close-modal">&times;</button>
+            <h3 class="modal-title" data-i18n="modal4_title">Technical Due Diligence</h3>
+            <div class="modal-body">
+                <p data-i18n="modal4_p1">For investors, acquiring companies, or organizations evaluating major AI vendor
+                    partnerships, assessing
+                    the true capabilities of an AI technology is critical. Our technical due diligence provides
+                    rigorous,
+                    objective evaluation of AI systems, underlying algorithms, and data architectures.</p>
+                <p data-i18n="modal4_p2">We look beyond the marketing claims to assess the technical viability,
+                    scalability, and defendability
                     of the AI assets. This includes analyzing the quality of the data pipelines, the robustness of the
                     machine learning models, the intellectual property landscape, and the competence of the technical
                     team.</p>
-                <p>Our deep scientific background and extensive commercial experience enable us to identify hidden
-                    technical debts, assess integration challenges, and provide clear, actionable risk assessments that
-                    inform critical investment and acquisition decisions.</p>
+                <p data-i18n="modal4_p3">Our deep scientific background and extensive commercial experience enable us to
+                    identify hidden technical debts, assess integration challenges, and provide clear, actionable risk
+                    assessments that inform critical investment and acquisition decisions.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 5 -->
+    <!-- Modal 5: Prototype Design -->
     <div id="modal-prototype" class="modal">
-        <div class="modal-content glass-card-dark">
-            <span class="close-modal">&times;</span>
-            <div class="modal-header">
-                <i class="icon gradient-text">🧪</i>
-                <h3>Prototype Design & Validation</h3>
-            </div>
-            <div class="modal-body text-light-muted">
-                <p>Before committing to full-scale production deployment, intelligent concepts must be rigorously
-                    tested. Our prototype design and validation service focuses on rapidly building functional 'Proof of
-                    Value' models to validate technical feasibility and business impact.</p>
-                <p>We construct focused prototypes that isolate core intelligent functionalities—whether it involves
+        <div class="modal-content glass-card">
+            <button class="close-modal">&times;</button>
+            <h3 class="modal-title" data-i18n="modal5_title">Prototype Design & Validation</h3>
+            <div class="modal-body">
+                <p data-i18n="modal5_p1">Before committing to full-scale production deployment, intelligent concepts
+                    must be rigorously tested.
+                    Our prototype design and validation service focuses on rapidly building functional 'Proof of Value'
+                    models to validate technical feasibility and business impact.</p>
+                <p data-i18n="modal5_p2">We construct focused prototypes that isolate core intelligent
+                    functionalities—whether it involves
                     integrating a novel RAG architecture, deploying a specialized perception model, or testing a
                     multi-agent workflow. This rapid iteration allows for early detection of integration challenges and
                     performance bottlenecks.</p>
-                <p>By moving quickly from theoretical design to functional prototypes, we help organizations validate
+                <p data-i18n="modal5_p3">By moving quickly from theoretical design to functional prototypes, we help
+                    organizations validate
                     their assumptions, secure internal stakeholder buy-in, and refine the system architecture before
                     making larger investments in enterprise-wide deployment.</p>
             </div>
         </div>
     </div>
 
-    <!-- Modal 6 -->
+    <!-- Modal 6: Innovation & Patent Strategy -->
     <div id="modal-innovation" class="modal">
-        <div class="modal-content glass-card-dark">
-            <span class="close-modal">&times;</span>
-            <div class="modal-header">
-                <i class="icon gradient-text">💡</i>
-                <h3>Innovation & Patent Strategy Consulting</h3>
-            </div>
-            <div class="modal-body text-light-muted">
-                <p>Protecting intellectual property is crucial in the fast-paced AI sector. We guide forward-thinking
+        <div class="modal-content glass-card">
+            <button class="close-modal">&times;</button>
+            <h3 class="modal-title" data-i18n="modal6_title">Innovation & Patent Strategy Consulting</h3>
+            <div class="modal-body">
+                <p data-i18n="modal6_p1">Protecting intellectual property is crucial in the fast-paced AI sector. We
+                    guide forward-thinking
                     organizations in developing comprehensive innovation strategies that align breakthrough research
-                    with defendable intellectual property protection, particularly in complex areas of expertise like
-                    applied AI
-                    and psychoacoustics.</p>
-                <p>Drawing on our own experience in securing patented technologies, we assist clients in identifying
+                    with
+                    defendable intellectual property protection, particularly in complex areas of expertise like applied
+                    AI and
+                    psychoacoustics.</p>
+                <p data-i18n="modal6_p2">Drawing on our own experience in securing patented technologies, we assist
+                    clients in identifying
                     patentable algorithms, methodologies, and system architectures within their R&D efforts. We help
                     structure innovation workflows to differentiate between open-source utilization and novel,
-                    proprietary developments.</p>
-                <p>This strategic approach to innovation ensures that your technological advancements secure a
+                    proprietary
+                    developments.</p>
+                <p data-i18n="modal6_p3">This strategic approach to innovation ensures that your technological
+                    advancements secure a
                     sustainable competitive advantage, turning innovative research into valuable, protected commercial
                     assets.</p>
             </div>
@@ -416,6 +437,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 

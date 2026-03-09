@@ -110,4 +110,46 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = '';
         }
     });
+
+    // 6. Language Toggle Logic
+    const langOptions = document.querySelectorAll('.lang-option');
+    let currentLang = 'en';
+
+    function setLanguage(lang) {
+        if (!window.translations || !window.translations[lang]) return;
+
+        currentLang = lang;
+        const translationStr = window.translations[lang];
+
+        // Update active class on toggle links
+        langOptions.forEach(opt => {
+            if (opt.getAttribute('data-lang') === lang) {
+                opt.classList.add('active');
+            } else {
+                opt.classList.remove('active');
+            }
+        });
+
+        // Translate elements with data-i18n
+        const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+        elementsToTranslate.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translationStr[key]) {
+                el.innerHTML = translationStr[key];
+            }
+        });
+    }
+
+    langOptions.forEach(opt => {
+        opt.addEventListener('click', (e) => {
+            e.preventDefault();
+            const lang = opt.getAttribute('data-lang');
+            if (lang && lang !== currentLang) {
+                setLanguage(lang);
+            }
+        });
+    });
+
+    // Initialize English Translation
+    setLanguage('en');
 });

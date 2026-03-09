@@ -314,6 +314,33 @@ ul {
     width: 100%;
 }
 
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.lang-toggle a {
+    color: var(--clr-text-muted) !important;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.lang-toggle a:hover,
+.lang-toggle a.active {
+    color: var(--clr-primary) !important;
+}
+
+.lang-toggle a::after {
+    display: none !important;
+}
+
+.lang-separator {
+    color: var(--clr-text-light-muted);
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
@@ -802,6 +829,10 @@ ul {
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
         transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 100;
+    }
+
+    .nav-links .lang-toggle {
+        margin-top: 2rem;
     }
 
     .nav-links.active {
