@@ -575,14 +575,10 @@ ul {
     font-family: var(--font-heading);
     font-size: 3rem;
     font-weight: 800;
-    color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
     line-height: 1;
     margin-bottom: 1rem;
     transition: var(--transition-normal);
-}
-
-.glass-card-dark:hover .expertise-number {
-    color: rgba(138, 53, 204, 0.3);
 }
 
 .expertise-card h3 {
@@ -890,7 +886,6 @@ ul {
 }
 
 .modal-content {
-    background: var(--clr-bg-dark);
     border-radius: var(--border-radius-lg);
     width: 100%;
     max-width: 600px;
@@ -899,7 +894,7 @@ ul {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     max-height: 90vh;
     overflow-y: auto;
-    box-shadow: 0 25px 50px -12px rgba(89, 37, 130, 0.5);
+    box-shadow: 0 25px 50px -12px rgba(89, 37, 130, 0.2);
 }
 
 .modal.show .modal-content {
@@ -910,7 +905,7 @@ ul {
     position: absolute;
     right: 1.5rem;
     top: 1.5rem;
-    color: var(--clr-text-light-muted);
+    color: var(--clr-text-muted);
     font-size: 2rem;
     font-weight: 300;
     cursor: pointer;
@@ -920,7 +915,7 @@ ul {
 }
 
 .close-modal:hover {
-    color: var(--clr-text-light);
+    color: var(--clr-text-main);
 }
 
 .modal-header {
@@ -928,7 +923,7 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     padding: 2.5rem 2.5rem 1rem 2.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .modal-header .icon {
@@ -953,6 +948,42 @@ ul {
 
 .modal-body p:last-child {
     margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Opportunities Section
+   ========================================================================== */
+.opportunities-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.opportunities-header {
+    padding: 2.5rem;
+}
+
+.opportunities-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .opportunities-columns {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.opportunities-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.full-height {
+    height: 100%;
 }
 
 /* Fix Contact Layout */
